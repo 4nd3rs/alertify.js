@@ -30,6 +30,10 @@ Credit where credit is due
 **Dylan Anderson**
 * GitHub: [quasipickle](http://github.com/quasipickle)
 
+**Anders Andersen**
+* GitHub: [4nd3rs](https://github.com/4nd3rs)
+
+
 ## Documentation Contributors
 
 **Kristoffer Berdal**

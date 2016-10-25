@@ -1,9 +1,10 @@
 {
-  "name": "alertify.js",
-  "version": "0.3.11",
+  "name": "alertify-error-delay.js",
+  "version": "0.3.12",
   "main": "lib/alertify.js",
   "ignore": [
     ".gitignore",
+    ".idea",
     "Gruntfile.js",
     "package.json",
     "test",

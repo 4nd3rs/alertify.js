@@ -2,8 +2,11 @@
 
 Alertify is an unobtrusive customizable JavaScript notification system.
 
+Extended with custom delay for error messages.
+
 ## Features
 
+* Set errorDelay option for the length of the error delay
 * Fully customizable alert, confirm and prompt dialogs
 * Fully customizable unobtrusive notification system
 * Callback parameter handling both OK and Cancel button clicks

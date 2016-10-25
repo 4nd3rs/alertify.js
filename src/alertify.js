@@ -91,6 +91,13 @@
 			 */
 			delay : 5000,
 
+
+			/**
+			 * Error delay number
+			 * @type {Number}
+			 */
+			errorDelay : 5000,
+
 			/**
 			 * Whether buttons are reversed (default is secondary/primary)
 			 * @type {Boolean}
@@ -296,11 +303,24 @@
 			 *
 			 * @return {undefined}
 			 */
-			close : function (elem, wait) {
-				// Unary Plus: +"2" === 2
-				var timer = (wait && !isNaN(wait)) ? +wait : this.delay,
-				    self  = this,
-				    hideElement, transitionDone;
+			close : function (elem, type, wait) {
+
+
+
+				var delay;
+				if(wait && !isNaN(wait)){
+					// Unary Plus: +"2" === 2
+					delay = +wait;
+				} else if(type && type === 'error'){
+					delay = this.errorDelay || this.delay;
+				} else {
+					delay = this.delay;
+				}
+
+				var timer = delay,
+					self  = this,
+					hideElement, transitionDone;
+
 
 				// set click event on log messages
 				this.bind(elem, "click", function () {
@@ -509,7 +529,7 @@
 				elLog.appendChild(log);
 				// triggers the CSS animation
 				setTimeout(function() { log.className = log.className + " alertify-log-show"; }, 50);
-				this.close(log, wait);
+				this.close(log, type, wait);
 			},
 
 			/**

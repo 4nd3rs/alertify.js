@@ -37,7 +37,7 @@
 	<a href="#" id="bootstrap">Bootstrap Theme</a>
 
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="../lib/alertify.min.js"></script>
+	<script src="../lib/alertify.js"></script>
 	<script>
 		function reset () {
 			$("#toggleCSS").attr("href", "../themes/alertify.default.css");
@@ -46,7 +46,8 @@
 					ok     : "OK",
 					cancel : "Cancel"
 				},
-				delay : 5000,
+				delay : 900,
+				errorDelay: 5000,
 				buttonReverse : false,
 				buttonFocus   : "ok"
 			});

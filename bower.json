@@ -1,6 +1,6 @@
 {
   "name": "alertify-error-delay",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "main": "lib/alertify.js",
   "ignore": [
     ".gitignore",
